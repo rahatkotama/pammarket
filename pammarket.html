@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylepammarket.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        //   document.getElementById("icon-openmenu").style.display = "none";
+        //   document.getElementById("icon-closemenu").style.display = "block";
+        }
+        function scrollToContact() {
+            var elmnt = document.getElementById("#CONTACT");
+            elmnt.scrollIntoView();
+        }
+    </script>
     <title>Pam</title>
 </head>
-
 <body>
     <!--ส่วนของ header-->
     <div class="pam-header-container">
-        <div class="pam-navbar">
+        <div class="pam-navbar desktop-navbar">
             <img src="images/logopam.png" width="100%">
             <div class="pam-navbar-menu">
                 <div class="pam-navbar-menu-a">
@@ -37,6 +52,20 @@
                 </div>
             </div>
         </div>
+        <div class="pam-navbar mobile-navbar">
+            <img src="images/logopam.png" class="image-item" width="100%">
+            <div class="topnav" id="myTopnav">
+                <a href="#WHAT" class="topnav-item">WHAT</a>
+                <a href="#WHY">WHY</a>
+                <a href="#CLIENT">CLIENT</a>
+                <a href="#PRICING">PRICING</a>
+                <a href="#CONTACT" onclick="scrollToContact()">CONTACT</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars" id="icon-openmenu"></i>
+                <!-- <img src="images/cancel.png" id="icon-closemenu"> -->
+                </a>
+            </div>
+        </div>
         <div class="pam-header">
             <div class="pam-header-left">
                 <span class="pam-header-text">จุดเด่นของ</span>
@@ -47,7 +76,6 @@
                 <img src="images/sms.png">
             </div>
         </div>
-
     </div>
     <!--ส่วนของ detail-->
     <div class="pam-detail-container">
@@ -159,7 +187,8 @@
             <p class="pam-campaign-textkey">
                 Key Feature
             </p>
-            <span class="pam-campaign-topic">CAMPAIGN JOURNEY<br>BUILDER</span><br>
+            <span class="pam-campaign-topic">CAMPAIGN JOURNEY</span><br>
+            <span class="pam-campaign-topicb">BUILDER</span>
             <p class="pam-campaign-detail">
                 ยกระดับอีกขั้นของการสร้าง campaign ให้สอดคล้องกับ customer journey
                 เมื่อการทำการตลาดของคุณไม่ได้ทำแล้วจบไปในครั้งเดียว แต่คุณยังสามารถออกแบบ campaign
@@ -172,11 +201,9 @@
         <div class="pam-campaign-left">
             <img src="images/campaigns.jpg">
         </div>
-
-
     </div>
     <!---ส่วนของ other-->
-    <div class="pam-other-container">
+    <div class="pam-other-container desktop">
         <div class="pam-other">
             <span class="pam-other-topic">...และยังมีฟีเจอร์สำคัญอีกมากมาย</span>
         </div>
@@ -187,6 +214,27 @@
         </div>
         <div class="pam-other-img">
             <img src="images/3screen.png">
+        </div>
+    </div>
+    <div class="pam-other-container mobile">
+        <div class="pam-other">
+            <span class="pam-other-topic">...และยังมีฟีเจอร์สำคัญอีกมากมาย</span>
+        </div>
+        <div class="pam-other-detail">
+            <div class="pam-other-right">
+                <div class="pam-other-text">
+                    <span class="pam-other-Multi">MULTI BRANDS & <br>DATABASE SUPPORT</span>
+                </div>
+                <div class="pam-other-text">
+                    <span class="pam-other-Dashboard">DASHBOARD & REPORT</span>
+                </div>
+                <div class="pam-other-text">
+                    <span class="pam-other-Role">ROLE PERMISSION<br>MANAGEMENT</span>
+                </div>
+            </div>
+            <div class="pam-other-left">
+                <img src="images/dashboard.jpg">
+            </div>
         </div>
     </div>
     <!---ส่วนของ contact-->
@@ -217,7 +265,7 @@
         </div>
     </div>
     <!---ส่วนของ footer-->
-    <div class="pam-footer-container">
+    <div class="pam-footer-container" id="#CONTACT">
         <div class="pam-footer-img">
             <img src="images/logo3ds.png" />
         </div>
@@ -230,5 +278,4 @@
         </div>
     </div>
 </body>
-
 </html>

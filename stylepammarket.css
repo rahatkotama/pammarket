@@ -300,6 +300,12 @@ li {
     font-family: Roboto;
     font-weight: 500;
 }
+.pam-campaign-topicb{
+    color: #00AA9A;
+    font-size: 36px;
+    font-family: Roboto;
+    font-weight: 500;
+}
 .pam-campaign-detail{
     color: #808080;
     font-family: Prompt;
@@ -426,7 +432,38 @@ li {
 .mobile{
     display: none;
 }
-
+.mobile-navbar{
+    display: none;
+}
+.topnav {
+    overflow: hidden;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #fff;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  /* #icon-closemenu{
+    display: none;
+  } */
 /* responsive */
 @media screen and (max-width: 1700px){
     .pam-navbar-menu-a {
@@ -589,6 +626,9 @@ li {
     .pam-campaign-topic {
         font-size: 31px;
     }
+    .pam-campaign-topicb{
+        font-size: 31px;
+    }
     .pam-campaign-detail {
         font-size: 17px;
     }
@@ -739,6 +779,9 @@ li {
     .pam-campaign-topic {
         font-size: 27px;
     }
+    .pam-campaign-topicb {
+        font-size: 27px;
+    }
     .pam-campaign-detail {
         font-size: 15px;
     }
@@ -789,8 +832,51 @@ li {
     .pam-campaign-left {
         padding-top: 4.5%;
     }
+    .pam-contact-detailb {
+        font-size: 20px;
+    }
+    .pam-contact-detail {
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 851px){
+    .topnav a {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        font-family: Roboto;
+    }
+    .topnav{
+        width: 100%;
+    }
+    .topnav-item{
+        margin-top: 10%;
+    }
+    .image-item{
+        position: absolute;
+        z-index: 1;
+    }
+    .pam-navbar{
+        display: flex;
+    }
+    .pam-navbar img {
+        width: 15%;
+        height: 40px;
+    }
+    .desktop-navbar{
+        display: none;
+    }
     .pam-header-text {
         font-size: 20px;
     }
@@ -876,6 +962,9 @@ li {
     .pam-campaign-topic {
         font-size: 25px;
     }
+    .pam-campaign-topicb {
+        font-size: 25px;
+    }
     .pam-campaign-detail {
         font-size: 13px;
     }
@@ -909,8 +998,38 @@ li {
 }
 /* ipad */
 @media screen and (max-width: 768px){
+    .topnav a {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav{
+        width: 100%;
+    }
+    .topnav-item{
+        margin-top: 10%;
+    }
+    .image-item{
+        position: absolute;
+        z-index: 1;
+    }
+    .pam-navbar{
+        display: flex;
+    }
     .pam-navbar img {
         width: 15%;
+        height: 35px;
     }
     .pam-detail-topic {
         font: 26px Prompt;
@@ -957,12 +1076,18 @@ li {
     }
     .pam-detail-detail {
         font-size: 17px;
-    }   
+    }
     .desktop{
+        display: none;
+    }  
+    .desktop-navbar{
         display: none;
     }
     .mobile{
         display: block;
+    }
+    .mobile-navbar{
+        display: flex;
     }
     .pam-cdp-textkey {
         margin-top: 0%;
@@ -1017,7 +1142,7 @@ li {
         padding-left: 6%;
     }
     .pam-segmentation-left img {
-        width: 25%;
+        width: 30%;
         margin-bottom: 0%;
         padding-left: 6%;
     }
@@ -1048,6 +1173,10 @@ li {
         font-size: 31px;
         padding-left: 6%;
     }
+    .pam-campaign-topicb {
+        font-size: 31px;
+        padding-left: 6%;
+    }
     .pam-campaign-right {
         width: 100%;
         padding-left: 0%;
@@ -1066,14 +1195,45 @@ li {
         padding-left: 6%;
         padding-bottom: 0%;
     }
-
-
-
-
-
-
-
-
+    .pam-campaign-detail{
+        width: 88%;
+    }
+    .pam-other-text{
+        width: 98%;
+        text-align: left;
+    }
+    .pam-other-left{
+        width: 50%;
+    }
+    .pam-other-left img{
+        width: 100%;
+    }
+    .pam-other-right{
+        width: 50%;
+    }
+    .pam-other-detail{
+        display: flex;
+        width: 100%;
+        margin-bottom: -0.7%;
+    }
+    .pam-other-Multi {
+        margin-top: 10%;
+        font-size: 20px;
+        padding-left: 12%;
+    }
+    .pam-other-Dashboard {
+        margin-top: 36%;
+        font-size: 20px;
+        padding-left: 12%;
+    }
+    .pam-other-Role {
+        margin-top: 58%;
+        font-size: 20px;
+        padding-left: 12%;
+    }
+    .pam-contact-right img{
+        width: 100%;
+    }
     .pam-contact-right {
         width: 100%;
     }
@@ -1083,7 +1243,7 @@ li {
         width: 80%;
     }
     .pam-contact-left {
-        width: 70%;
+        width: 80%;
         margin-top: 6%;
         margin-bottom: 0%;
         margin-left: 0%;
@@ -1102,5 +1262,321 @@ li {
     }
     .pam-contact-textb {
         font-size: 26px;
+    }
+}
+@media screen and (max-width: 751px){
+    .pam-contact-detailb {
+        font-size: 27px;
+    }
+    .pam-contact-detail {
+        font-size: 27px;
+    }
+    .pam-contact-text {
+        font-size: 23px;
+    }
+    .pam-contact-textb {
+        font-size: 23px;
+    }
+    .pam-contact-left {
+        padding-left: 20%;
+    }
+    .pam-footer-text {
+        margin-left: 45px;
+    }
+}
+@media screen and (max-width: 651px){
+    .pam-navbar img {
+        height: 32px;
+    }
+    .pam-contact-left {
+        padding-left: 19%;
+    }
+    .pam-contact-detailb {
+        font-size: 25px;
+    }
+    .pam-contact-detail {
+        font-size: 25px;
+    }
+    .pam-contact-text {
+        font-size: 21px;
+    }
+    .pam-contact-textb {
+        font-size: 21px;
+    }
+    .pam-other-Multi {
+        font-size: 18px;
+    }
+    .pam-other-Dashboard {
+        font-size: 18px;
+    }
+    .pam-other-Role {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 600px){
+    .pam-navbar img {
+        height: 30px;
+    }
+    .pam-contact-detailb {
+        font-size: 22px;
+    }
+    .pam-contact-detail {
+        font-size: 22px;
+    }
+    .pam-contact-left {
+        padding-left: 17%;
+    }
+    .pam-other-Multi {
+        font-size: 16px;
+    }
+    .pam-other-Dashboard {
+        font-size: 16px;
+    }
+    .pam-other-Role {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 551px){
+    .pam-navbar img {
+        height: 27px;
+    }
+    .pam-contact-detailb {
+        font-size: 21px;
+    }
+    .pam-contact-detail {
+        font-size: 21px;
+    }
+    .pam-contact-text {
+        font-size: 20px;
+    }
+    .pam-contact-textb {
+        font-size: 20px;
+    }
+    .pam-segmentation-left img {
+        width: 35%;
+    }
+    .pam-other-Multi {
+        font-size: 15px;
+    }
+    .pam-other-Dashboard {
+        font-size: 15px;
+    }
+    .pam-other-Role {
+        font-size: 15px;
+    }
+    .pam-footer-img {
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 500px){
+    .topnav.responsive a {
+        font-size: 15px;
+    }
+    .pam-contact-detailb {
+        font-size: 20px;
+    }
+    .pam-contact-detail {
+        font-size: 20px;
+    }
+    .pam-contact-text {
+        font-size: 19px;
+    }
+    .pam-contact-textb {
+        font-size: 19px;
+    }
+    .pam-other-Multi {
+        padding-left: 10%;
+        font-size: 13px;
+    }
+    .pam-other-Dashboard {
+        padding-left: 10%;
+        font-size: 13px;
+    }
+    .pam-other-Role {
+        padding-left: 10%;
+        font-size: 13px;
+    }
+    .pam-footer-img {
+        margin-left: 35px;
+    }
+    .pam-footer-img img{
+        width: 80%;
+    }
+    .pam-footer-text {
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width: 451px){
+    .pam-navbar img {
+        height: 22px;
+    }
+    .pam-header-topic {
+        font-size: 35px;
+    }
+    .pam-detail-topic {
+        font-size: 28px
+    }
+    .pam-detail-detail {
+        font-size: 16px;
+    }
+    .pam-cdp-textkey {
+        font-size: 14px;
+    }
+    .pam-cdp-topics {
+        font-size: 19px;
+    }
+    .pam-cdp-topicb {
+        font-size: 29px;
+    }
+    .pam-cdp-detail {
+        font-size: 15px;
+    }
+    .pam-segmentation-textkey{
+        font-size: 14px;
+    }
+    .pam-segmentation-topics{
+        font-size: 29px;
+    }
+    .pam-segmentation-topicb{
+        font-size: 19px;
+    }
+    .pam-segmentation-detailb{
+        font-size: 15px;
+    }
+    .pam-segmentation-details{
+        font-size: 15px;
+    }
+    .pam-segmentation-left img {
+        width: 40%;
+    }
+    .pam-campaign-textkey{
+        font-size: 14px;
+    }
+    .pam-campaign-topic {
+        font-size: 29px;
+    }
+    .pam-campaign-topicb {
+        font-size: 29px;
+    }
+    .pam-campaign-detail{
+        font-size: 15px;
+    }
+    .pam-other-topic {
+        font-size: 21px;
+    }
+    .pam-other-Multi {
+        padding-left: 9%;
+        font-size: 12px;
+    }
+    .pam-other-Dashboard {
+        padding-left: 9%;
+        font-size: 12px;
+    }
+    .pam-other-Role {
+        padding-left: 9%;
+        font-size: 12px;
+    }
+    .pam-contact-detailb {
+        font-size: 18px;
+    }
+    .pam-contact-detail {
+        font-size: 18px;
+    }
+    .pam-contact-text {
+        font-size: 17px;
+    }
+    .pam-contact-textb {
+        font-size: 17px;
+    }
+    .pam-contact-left {
+        padding-left: 14%;
+    }
+    .pam-footer-text {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 400px){
+    .pam-navbar img {
+        height: 20px;
+    }
+    .pam-header-topic {
+        font-size: 33px;
+    }
+    .pam-detail-topic {
+        font-size: 25px;
+    }
+    .pam-other-Multi {
+        font-size: 11px;
+    }
+    .pam-other-Dashboard {
+        font-size: 11px;
+    }
+    .pam-other-Role {
+        font-size: 11px;
+    }
+    .pam-contact-left {
+        width: 90%;
+    }.pam-contact-detailb {
+        font-size: 17px;
+    }
+    .pam-contact-detail {
+        font-size: 17px;
+    }
+    .pam-contact-text {
+        font-size: 16px;
+    }
+    .pam-contact-textb {
+        font-size: 16px;
+    }
+    .pam-contact-left {
+        padding-left: 12%;
+    }
+    .pam-footer-img img {
+        width: 70%;
+    }
+    .pam-footer-text {
+        margin-left: -10px;
+    }
+}
+/* iphone x */
+@media screen and (max-width: 376px){
+    .pam-navbar img {
+        height: 18px;
+    }
+    .pam-detail-detail {
+        font-size: 15px;
+    }
+    .pam-cdp-textkey {
+        font-size: 13px;
+    }
+    .pam-cdp-topics {
+        font-size: 17px;
+    }
+    .pam-cdp-topicb {
+        font-size: 26px;
+    }
+    .pam-segmentation-textkey {
+        font-size: 13px;
+    }
+    .pam-segmentation-topics {
+        font-size: 26px;
+    }
+    .pam-segmentation-topicb {
+        font-size: 17px;
+    }
+    .pam-campaign-textkey {
+        font-size: 13px;
+    }
+    .pam-campaign-topic {
+        font-size: 26px;
+    }
+    .pam-campaign-topicb {
+        font-size: 26px;
+    }
+    .pam-other-topic {
+        font-size: 19px;
+    }
+    .pam-footer-text {
+        margin-left: -15px;
     }
 }
